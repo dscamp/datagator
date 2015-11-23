@@ -1,6 +1,6 @@
 == Datagator
 
-![alt tag](/app/assets/images/Logo-Crocodile2.png?raw=true)
+![alt tag](./blob/master/app/assets/images/Logo-Crocodile2.png?raw=true)
 
 JSON Agregation and Persestance as a Service... but let's agree to not call it JAsPaaS ok.
 
