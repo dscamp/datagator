@@ -1,6 +1,7 @@
 == Datagator
 
-![alt tag](./blob/master/app/assets/images/Logo-Crocodile2.png?raw=true)
+http://1822.ca/assets/Logo_sm-a241c0d8831d5e943877995e956a8f4f27d072d15837041e755866b6f6131694.png
+
 
 JSON Agregation and Persestance as a Service... but let's agree to not call it JAsPaaS ok.
 
@@ -9,7 +10,36 @@ JSON Agregation and Persestance as a Service... but let's agree to not call it J
 * Rails 4.2
 
 == How to install 
-`bundle install`   and go
+- bundle
+- rake
+- precompile
 
+== usage
+create a dataset
+
+then use the post any JSON strings you like to the following end point
+`www.yourdomain.com/datasets/:dataset_pubId/`
+as can be seen here:
+http://1822.ca/datasets/1448299483098/datums/new
+
+* IE:
+datum[row]:{"date":"23/11/15","time":"13:58","Activity":"Made a readme.md file."} 
+commit:Create Datum
+
+== Viewing collected Data
+
+Datasets can be seen here in a json form if the dataset is marked as open
+http://1822.ca/datasets/1448299483098/json
+or via html 
+http://1822.ca/datasets/1448299483098
+
+Closed datasets will require the private id to be provided as part of the request or via a form.
+
+
+== Next steps
+- Have an endpoint take any arguments from a form and create the JSON for you.   This will allow users to make simple forms and apps that without the need for a custom backend.
+- Use the private ID  for deleting/approving submitted data.
+
+- Use it as a backend for a mobile app in order to figure out what else I'm missing.
 
 
