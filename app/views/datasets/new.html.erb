@@ -1,0 +1,22 @@
+<h1>Create a dataset</h1>
+<%if @dataset.errors.any?%>
+  <ul>
+    <%@dataset.errors.each do |err|%>
+    <li>
+      <%= @dataset.errors.full_messages  %>
+    </li>
+    <%end%>
+    
+  </ul>
+<%end%>
+
+<%= form_for @dataset do |f| %>
+  <%= f.label :name%>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :managed%>
+  <%= f.check_box :managed, class: "form-control" %>
+  <%= f.label :open%>
+  <%= f.check_box :open, class: "form-control" %>
+  <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,24 @@
+<h1>Dataset Details</h1>
+<div>
+  <ul>
+<li><b>Name: </b><%= @dataset.name %></li>
+<li><b>PubId: </b><%= @dataset.pubId %></li>
+<li><b>PrivId: </b><%= @dataset.privId %></li>
+</ul>
+
+</div>
+
+<div>
+  { "dataset": "<%=@dataset.pubId  %>",
+  "rows": [
+  <%if @dataset.data.any? %>
+    <% @dataset.data.each do |d| %>
+      <%= d.row %>
+      <%if d!=@dataset.data.last %>
+        ,
+      <%end  %>
+    <%end%>
+  <%end %>
+  ]
+}
+</div>

@@ -1,0 +1,21 @@
+<h1>Create a data entry</h1>
+<%if @datum.errors.any?%>
+  <ul>
+    <%@datum.errors.each do |err|%>
+    <li>
+      <%= @datum.errors.full_messages  %>
+    </li>
+    <%end%>
+
+  </ul>
+<%end%>
+
+
+<%= form_for @datum, url: dataset_datums_path do |f| %>
+  <%= f.label :data%>
+  <%= f.text_field :row, class: "form-control" %>
+  <%= f.label :managed%>
+  <%= f.submit %>
+
+
+<% end %>
