@@ -3,7 +3,7 @@
 http://1822.ca/assets/Logo_sm-a241c0d8831d5e943877995e956a8f4f27d072d15837041e755866b6f6131694.png
 
 
-JSON Agregation and Persestance as a Service... but let's agree to not call it JAsPaaS ok.
+JSON Agregation and Persestance as a Service... but let's agree to not call it JAaPaaS ok.
 
 
 * Ruby 2.2.1
